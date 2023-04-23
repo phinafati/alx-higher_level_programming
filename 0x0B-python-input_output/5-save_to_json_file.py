@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
 """
-Python Module created by Phina
+ function that writes an Object to a text file
 """
 import json
 
