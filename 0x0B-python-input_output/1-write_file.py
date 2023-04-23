@@ -1,20 +1,18 @@
 #!/usr/bin/python3
-""" Modes that contains a functions that written
+
+"""
+Python Module created by @Jr Hirwa
 """
 
 
-
-def writes_file(filename="", text=""):
-    """ Function that write to files
-
-    Args:
-        filename: filename
-        text: text to write
-
-    Raises:
-        Exception: when the file can be opened
-
+def write_file(filename="", text=""):
     """
-
-    with open(ilename, 'w', encoding="utf-8") as f:
-        return f.write(text)
+    function that writes text to a utf-8 encoded file
+    Arguments:
+        filename (str): The name of the file
+        text (str): The text to write
+    Return:
+        A file with text written
+    """
+    with open(filename, 'w', encoding='utf-8') as my_file:
+        return my_file.write(text)
