@@ -1,21 +1,27 @@
 #!/usr/bin/python3
-"""Defines a Phina's Triangle function."""
+
+"""
+Python Module created by @Phinafati
+"""
 
 
 def pascal_triangle(n):
-    """Represent Pascal's Triangle of size n.
-    Returns a list of lists of integers representing the triangle.
     """
-    if n <= 0:
-        return []
+    function that creates a pascal triangle
+    Attributes:
+        n (int): n exponent for triangle
+    Return:
+        matrix with values for the triangle
+    """
+    pascal_t = []
+    triangle = []
 
-    triangles = [[1]]
-    while len(triangles) != n:
-        tri = triangles[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri[i + 1])
-        tmp.append(1)
-        triangles.append(tmp)
-    return triangles
-
+    for i in range(int(n)):
+        new = pascal_t[:]
+        new.append(1)
+        count = len(pascal_t)
+        for i in range(1, count):
+            new[i] = pascal_t[i - 1] + pascal_t[i]
+        pascal_t = new[:]
+        triangle.append(pascal_t)
+    return
