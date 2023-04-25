@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a student."""
+"""Defines a class Student."""
 
 
 class Student:
@@ -16,7 +16,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-        def to_json(self, attrs=None):
+    def to_json(self, attrs=None):
         """Get a dictionary representation of the Student.
         If attrs is a list of strings, represents only those attributes
         included in the list.
