@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Python Module created by @Jr Hirwa
+Python Module created by phinafati
 """
 
 
@@ -15,4 +15,4 @@ def write_file(filename="", text=""):
         A file with text written
     """
     with open(filename, 'w', encoding='utf-8') as my_file:
-        return my_file.write(text)
+        return my_file.write(text
