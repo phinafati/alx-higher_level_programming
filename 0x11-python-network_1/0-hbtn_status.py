@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """
 fetches https://alx-intranet.hbtn.io/status
 """
